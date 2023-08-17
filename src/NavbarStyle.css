@@ -1,0 +1,11 @@
+
+.col-navbar{
+    background-color: aqua;
+    width: 55px;
+    height: 100vh;
+}
+.sidebarEventTrigger{
+    background-color: chartreuse;
+    width: 20px;
+    height: 100vh;
+}
