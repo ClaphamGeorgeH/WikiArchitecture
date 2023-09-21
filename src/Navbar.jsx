@@ -1,45 +1,48 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons'
 import './NavbarStyle.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 export const Navbar = () => {
 
-  const [isNavbarDisplayed, setNavbar] = useState(false)
+  const [mousePos, setMousePos] = useState({});
 
-  const onMouseEnter = ({target}) => {
-    setNavbar(true);
-  }
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      setMousePos({x:event.clientX});
+    };
+   
+    window.addEventListener('mousemove', handleMouseMove);
 
-  const onMouseLeave = ({target}) => {
-    setNavbar(false)
-  }
+    return () => {
+      window.removeEventListener(
+        'mousemove',
+        handleMouseMove
+      )
+    }
+  }, [])
   
   return (
     <>
-        <div 
-        className='lg-navbar-content sticky-top'
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-        >{
-          isNavbarDisplayed ?
-          <div className='d-flex flex-column float-start col-navbar'> 
-              <a href="">W</a>
-              <a href="">W</a>
-              <a href="">W</a>
-              <a href="">W</a>
-              <a href="">W</a>
-          </div>
-          :
-          <div></div>
-          }
 
-          <div 
-            className='d-flex flex-column float-start sidebarEventTrigger'> 
-            
-            </div>
-        </div>
+        {<div
+        className='lg-navbar-content sticky-top'
+        >{
+          mousePos.x< 55 ?
+          <div className='d-flex flex-column float-start col-navbar'> 
+              <Link to={`composition/1`}>C1</Link>
+              <Link to={`composition/2`}>C2</Link>
+              <a href="">W</a>
+              <a href="">W</a>
+              <a href="">W</a>
+              <a href="">W</a>
+          </div>:
+          <div></div>
+        }
+
+        </div>}
         
         <div className='sm-navbar-content'>
           <nav className="navbar bg-body-tertiary">
