@@ -1,0 +1,13 @@
+.sm-home-header{
+    display: none;
+}
+
+
+@media screen and (max-width: 600px){
+    .lg-home-header{
+        display: none;
+    }
+    .sm-home-header{
+        display: initial;
+    }
+}

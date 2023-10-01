@@ -1,7 +1,6 @@
 import React from 'react'
 import { Navbar } from './Navbar'
 import ReactDOM from 'react-dom/client';
-import './styles.css'
 import { Canvas } from './Canvas';
 import { BrowserRouter } from 'react-router-dom';
 import { WikiArquitectureApp } from './WikiArquitectureApp';

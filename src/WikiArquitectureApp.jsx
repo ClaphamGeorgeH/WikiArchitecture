@@ -1,12 +1,14 @@
 import React from 'react'
 import { Navbar } from './Navbar';
+import { AppRouter } from './routes/AppRouter';
 
 
 export const WikiArquitectureApp = () => {
 
   return (
     <>
-    <Navbar/>
+      <AppRouter/>
+    {/* <Navbar/>
     
     <div className='container col-content'>
         
@@ -22,7 +24,7 @@ export const WikiArquitectureApp = () => {
                   </div>
               </div>
           </header>
-        </div>
+        </div> */}
     </>
   )
 }
