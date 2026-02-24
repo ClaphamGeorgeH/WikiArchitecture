@@ -1,0 +1,11 @@
+Model Information:
+* title:	Villa Savoye - Le Corbusier
+* source:	https://sketchfab.com/3d-models/villa-savoye-le-corbusier-2f86401294d14de09acd96611b0f8e99
+* author:	Matheus Rudo (https://sketchfab.com/Matheus.Rudo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Villa Savoye - Le Corbusier" (https://sketchfab.com/3d-models/villa-savoye-le-corbusier-2f86401294d14de09acd96611b0f8e99) by Matheus Rudo (https://sketchfab.com/Matheus.Rudo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -32,8 +32,8 @@ export const Navbar = () => {
         >{
           mousePos.x< 55 ?
           <div className='d-flex flex-column float-start col-navbar'> 
-              <Link to={`composition/1`}>C1</Link>
-              <Link to={`composition/2`}>C2</Link>
+              <Link to={`Canvas`}>C1</Link>
+              <Link to={`Canvas`}>C2</Link>
               <a href="">W</a>
               <a href="">W</a>
               <a href="">W</a>
