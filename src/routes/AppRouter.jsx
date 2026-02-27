@@ -4,11 +4,11 @@ import {PublicRoute} from './PublicRoute';
 import { Route, Routes } from 'react-router-dom';
 import { Navbar } from '../Navbar';
 import { Home } from '../Home';
+import '../HomeStyle.css';
 
 export const AppRouter = () => {
   return (
     <>
-      <Navbar/>
       <Routes>
         <Route path='home' element={
           <PublicRoute>
@@ -17,7 +17,10 @@ export const AppRouter = () => {
         }/>
         <Route path='home/Canvas' element={
           <PublicRoute>
-            <Canvas/>
+            <div className="canvas-wrapper">
+              <Canvas/>  
+            </div>
+            
           </PublicRoute>
         }/>
       </Routes>

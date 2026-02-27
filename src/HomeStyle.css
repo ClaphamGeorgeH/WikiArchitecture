@@ -2,6 +2,8 @@
     display: none;
 }
 
+/* e.g. in HomeStyle.css or a dedicated stylesheet */
+.canvas-wrapper { width:100vw; height:100vh; }
 
 @media screen and (max-width: 600px){
     .lg-home-header{
